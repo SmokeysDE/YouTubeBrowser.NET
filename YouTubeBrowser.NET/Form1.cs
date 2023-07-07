@@ -44,6 +44,7 @@ namespace YouTubeBrowser.NET
         {
             try
             {
+                //using für den Garbage Collector, da die instanzverworfen werden kann.
                 using (WebClient client = new WebClient())
                 {
                     byte[] bytes = client.DownloadData(url);
